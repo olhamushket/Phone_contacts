@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ContactService {
     private final ContactDAO contactDAO;
@@ -17,5 +19,17 @@ public class ContactService {
 
     public void addContact(Contact contact){
         contactDAO.add(contact);
+    }
+
+    public void deleteContact(Contact contact){
+        contactDAO.delete(contact);
+    }
+
+    public void editContact(Contact contact){
+        contactDAO.edit(contact);
+    }
+
+    public String getAllContacts(){
+        return contactDAO.getContacts();
     }
 }

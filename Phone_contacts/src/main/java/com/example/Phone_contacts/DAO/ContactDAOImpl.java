@@ -9,7 +9,7 @@ import java.util.List;
 @Repository("contactDAO")
 public class ContactDAOImpl implements ContactDAO{
 
-    private static List<Contact> contactBook = new ArrayList<>();
+    private static final List<Contact> contactBook = new ArrayList<>();
     @Override
     public void add(Contact contact) {
         contactBook.add(contact);
@@ -27,7 +27,7 @@ public class ContactDAOImpl implements ContactDAO{
     }
 
     @Override
-    public void getContacts(List<Contact> contacts) {
-        contactBook.toString();
+    public String getContacts() {
+        return contactBook.toString();
     }
 }

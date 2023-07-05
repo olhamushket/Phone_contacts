@@ -22,18 +22,11 @@ public class Contact {
         return name;
     }
 
-    public static List<String> getEmails() {
-        return emails;
-    }
-
-    public static List<String> getPhoneNumbers() {
-        return phoneNumbers;
-    }
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "name='" + name + '\'' + emails + '\'' + phoneNumbers + '\'' +
+        return "{" + '\n'+ '\t'+
+                "name:" +'\"'+ name + '\"'+'\n' + '\t' + "emails:" + emails + '\n' + '\t' + "phoneNumbers:" + phoneNumbers + '\n' +
                 '}';
     }
 }

@@ -11,5 +11,5 @@ public interface ContactDAO {
 
     void edit(Contact contact);
 
-    void getContacts(List<Contact> contacts);
+    String getContacts();
 }
