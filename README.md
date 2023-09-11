@@ -1,5 +1,5 @@
 # Phone_contacts
-Design and implement “Phone contacts” application. Phone contacts application allows adding/editing and deleting contacts data. Single contact is represented by the following data:
+Phone contacts application allows adding/editing and deleting contacts data. Single contact is represented by the following data:
 
 1.     Contact name
 
@@ -51,19 +51,9 @@ Contact names should be unique
 
 -       Add ability to export/import contacts
 
--       Use any free API email/ phone validators (please don’t store your credentials in the project, please change it to fake data)
+-       Use any free API email/ phone validators
 
- 
 
- As soon as the work is done, please send a link to public git repository containing source code of the application (send link in this form).
-
-  
-
-Please note that no UI is necessary, only a backend part.
-
- 
-
- 
 
 Here are some examples of server usage:
 
